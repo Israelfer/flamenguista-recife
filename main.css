@@ -1,0 +1,396 @@
+:root {
+  --primary-color: #c91919;
+  --secundary-color: #ffdd6b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+
+h1 {
+  color: white;
+  font-family: "Code", serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-family: "Code", serif;
+  text-transform: uppercase;
+}
+
+h3, h4, h5, h6 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+/* ***************************************************** */
+
+header {
+  width: 100%;
+  align-items: center;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+
+  background-color: black;
+  background: linear-gradient(
+      -90deg,
+      rgba(19, 19, 19, 0.911),
+      rgba(87, 8, 11, 0.848)
+    ),
+    url("img/header.jpg") fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.top-menu {
+  padding-top: 50px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  margin-right: 7vw;
+}
+
+@media (max-width: 1000px) {
+  .logo {
+    margin-right: 0px;
+  }
+  
+  .top-menu {
+    flex-direction: column;
+  }
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px;
+  padding: 5px;
+  align-items: center;
+  background-color: rgba(19, 19, 19, 0.411);
+  border: var(--primary-color) solid 1px;
+}
+
+header nav ul li a {
+  transition: 0.9s;
+  color: white;
+}
+
+.title-header {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12%;
+}
+
+.btn1 {
+  font-family: "Code", serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: white;
+  border: 1px solid var(--primary-color);
+  transition: 0.9s;
+  background-color: rgba(19, 19, 19, 0.411);
+}
+
+.p1 {
+  color: var(--primary-color);
+  font-family: "Code", serif;
+  text-transform: uppercase;
+
+  display: block;
+  font-size: 1.17em;
+  margin: 7px 0px;
+  font-weight: bold;
+}
+
+/* ********************** Blog ********************** */
+
+.section-blog {
+  width: 100%;
+  padding: 40px 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.sectionblog-content {
+  margin: 40px 10px; 
+
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1050px) {
+  .sectionblog-content {
+    flex-direction: column;
+    margin-bottom: 0;
+    padding: 0px 0px;
+  }
+  
+  .img-content {
+    margin-bottom: 30px;
+  }
+
+  .txt {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+
+.img-content {
+  justify-content: center;
+  padding: 0px 15px;
+}
+
+.img-content img {
+  width: 320px;
+}
+
+.txt {
+  margin-bottom: 22px;
+}
+
+.btn2 {
+  font-family: "Code", serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 9px;
+  width: 30%;
+  font-size: 12px;
+  font-weight: bold;
+
+  color: black;
+  border: 1px solid var(--primary-color);
+  transition: 0.9s;
+}
+
+/* ********************** Recursos ********************** */
+
+.sec2 {
+  width: 100%;
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 15px;
+}
+
+.secrecursos {
+  width: 100%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .secrecursos {
+    flex-direction: column;
+  }
+ .secrecursostxt {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+
+}
+
+.secrecursos h2 {
+  color: var(--secundary-color);
+}
+
+.secrecursostxt {
+  width: 300px;
+}
+
+.img-download {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-download figure {
+  height: 320px;
+}
+
+.div-quote {
+  border: 7px double gray;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.quote {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.2em;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding: 12px;
+  margin: 10px 0px;
+}
+
+/* ********************** Sobre o autor ********************** */
+
+.author {
+  width: 100%;
+}
+
+.author-title {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.author-text {
+  width: 75%;
+  margin: 40px auto; 
+  display: flex;
+  align-items: center;
+}
+
+.about-text {
+  margin-right: 10px;
+}
+
+.about-text-p {
+  margin-top: 13px;
+}
+
+.about-text-social {
+  margin-top: 22px;
+}
+
+.about-text-social ul {
+  display: flex;
+}
+
+.about-text-social li {
+  margin-right: 30px;
+}
+
+.icons {
+  border-radius: 55%;
+  transition: 0.2s;
+}
+
+.icons:hover {
+  background-color: var(--primary-color);
+}
+
+.eu2 {
+  border-radius: 50%;
+}
+
+/* ********************** Vídeos ********************** */
+
+.video {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 5px 25px;
+}
+
+.video h2 {
+  color: var(--secundary-color);
+}
+
+.video-desc {
+  text-align: center;
+  margin: 40px 5px;
+}
+
+.video-iframe {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1050px) {
+  .video-iframe {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+/* ********************** Footer ********************** */
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+.cfooter {
+  padding: 10px;
+  border-top: 1px solid white;
+  background-color: black;
+  color: white;
+}
+
+.cfooter a {
+  color: var(--secundary-color);
+}
+
+.cfooter a:hover {
+  color: var(--primary-color);
+}
